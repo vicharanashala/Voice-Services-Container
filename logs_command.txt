@@ -1,0 +1,5 @@
+docker exec -it kcc_voice_system bash
+# if bash is not present, try sh
+# then inside container:
+ls -la /var/log/supervisor
+tail -f /var/log/supervisor/*.log
