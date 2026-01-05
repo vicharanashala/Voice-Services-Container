@@ -1,4 +1,4 @@
-# KCC Voice Services Backend
+# Voice Services Backend
 
 This repository hosts a high-performance, containerized backend for voice processing services, specializing in Indian languages. It provides APIs for speech-to-text (transcription), language identification, and punctuation restoration.
 
