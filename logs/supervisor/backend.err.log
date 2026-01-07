@@ -36816,3 +36816,177 @@ INFO:     Uvicorn running on http://0.0.0.0:5020 (Press CTRL+C to quit)
 2026-01-05 17:11:12,510 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'English', 'language_code': 'en', 'confidence': 0.8217054605484009, 'detection_method': 'whisper', 'model_used': 'whisper-small'}
 2026-01-05 17:11:12,510 - root - INFO - Language validation passed: English (en)
 The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+2026-01-05 17:59:23,662 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-05 17:59:24,264 - services.mms_lid_language_detection - INFO - Whisper detected Kannada with high confidence 0.845
+2026-01-05 17:59:24,264 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Kannada', 'language_code': 'kn', 'confidence': 0.8450575470924377, 'detection_method': 'whisper', 'model_used': 'whisper-small'}
+2026-01-05 17:59:24,264 - root - INFO - Language validation passed: Kannada (kn)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-05 17:59:26,205 - root - INFO - Applying punctuation for Kannada
+2026-01-05 18:00:28,981 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-05 18:00:29,386 - services.mms_lid_language_detection - INFO - Whisper detected kn with low confidence 0.781, using MMS-LID fallback
+2026-01-05 18:00:29,386 - services.mms_lid_language_detection - INFO - Using MMS-LID 126 model for language detection
+2026-01-05 18:00:29,732 - services.mms_lid_language_detection - INFO - MMS-LID detected: Kannada (kn) with confidence 1.000
+2026-01-05 18:00:29,732 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Kannada', 'language_code': 'kn', 'confidence': 0.9997996687889099, 'detection_method': 'mms_lid_fallback', 'model_used': 'facebook/mms-lid-126', 'mms_lid_raw': 'kan', 'whisper_result': {'language': 'kn', 'confidence': 0.7806605100631714}}
+2026-01-05 18:00:29,732 - root - INFO - Language validation passed: Kannada (kn)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-05 18:00:30,972 - root - INFO - Applying punctuation for Kannada
+2026-01-05 18:01:41,601 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-05 18:01:41,960 - services.mms_lid_language_detection - INFO - Whisper detected kn with low confidence 0.694, using MMS-LID fallback
+2026-01-05 18:01:41,960 - services.mms_lid_language_detection - INFO - Using MMS-LID 126 model for language detection
+2026-01-05 18:01:42,226 - services.mms_lid_language_detection - INFO - MMS-LID detected: Kannada (kn) with confidence 0.999
+2026-01-05 18:01:42,226 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Kannada', 'language_code': 'kn', 'confidence': 0.9989006519317627, 'detection_method': 'mms_lid_fallback', 'model_used': 'facebook/mms-lid-126', 'mms_lid_raw': 'kan', 'whisper_result': {'language': 'kn', 'confidence': 0.6941006779670715}}
+2026-01-05 18:01:42,226 - root - INFO - Language validation passed: Kannada (kn)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-05 18:01:43,391 - root - INFO - Applying punctuation for Kannada
+2026-01-05 18:02:55,084 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-05 18:02:55,483 - services.mms_lid_language_detection - INFO - Whisper detected mr with low confidence 0.365, using MMS-LID fallback
+2026-01-05 18:02:55,483 - services.mms_lid_language_detection - INFO - Using MMS-LID 126 model for language detection
+2026-01-05 18:02:55,786 - services.mms_lid_language_detection - INFO - MMS-LID detected: Kannada (kn) with confidence 0.967
+2026-01-05 18:02:55,786 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Kannada', 'language_code': 'kn', 'confidence': 0.9669694304466248, 'detection_method': 'mms_lid_fallback', 'model_used': 'facebook/mms-lid-126', 'mms_lid_raw': 'kan', 'whisper_result': {'language': 'mr', 'confidence': 0.3648276627063751}}
+2026-01-05 18:02:55,786 - root - INFO - Language validation passed: Kannada (kn)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-05 18:02:56,966 - root - INFO - Applying punctuation for Kannada
+2026-01-05 18:03:58,550 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-05 18:03:58,978 - services.mms_lid_language_detection - INFO - Whisper detected kn with low confidence 0.498, using MMS-LID fallback
+2026-01-05 18:03:58,978 - services.mms_lid_language_detection - INFO - Using MMS-LID 126 model for language detection
+2026-01-05 18:03:59,302 - services.mms_lid_language_detection - INFO - MMS-LID detected: Kannada (kn) with confidence 0.999
+2026-01-05 18:03:59,303 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Kannada', 'language_code': 'kn', 'confidence': 0.9986855387687683, 'detection_method': 'mms_lid_fallback', 'model_used': 'facebook/mms-lid-126', 'mms_lid_raw': 'kan', 'whisper_result': {'language': 'kn', 'confidence': 0.4978850185871124}}
+2026-01-05 18:03:59,303 - root - INFO - Language validation passed: Kannada (kn)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-05 18:04:00,223 - root - INFO - Applying punctuation for Kannada
+2026-01-07 10:56:20,627 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-07 10:56:22,840 - services.mms_lid_language_detection - INFO - Whisper detected hi with low confidence 0.501, using MMS-LID fallback
+2026-01-07 10:56:22,841 - services.mms_lid_language_detection - INFO - Using MMS-LID 126 model for language detection
+2026-01-07 10:56:23,492 - services.mms_lid_language_detection - INFO - MMS-LID detected: Punjabi (pa) with confidence 0.995
+2026-01-07 10:56:23,494 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Punjabi', 'language_code': 'pa', 'confidence': 0.994565486907959, 'detection_method': 'mms_lid_fallback', 'model_used': 'facebook/mms-lid-126', 'mms_lid_raw': 'pan', 'whisper_result': {'language': 'hi', 'confidence': 0.5008590221405029}}
+2026-01-07 10:56:23,494 - root - INFO - Language validation passed: Punjabi (pa)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-07 10:56:26,880 - root - INFO - Applying punctuation for Punjabi
+2026-01-07 13:08:24,682 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-07 13:08:26,841 - services.mms_lid_language_detection - INFO - Whisper detected hi with low confidence 0.403, using MMS-LID fallback
+2026-01-07 13:08:26,842 - services.mms_lid_language_detection - INFO - Using MMS-LID 126 model for language detection
+2026-01-07 13:08:27,533 - services.mms_lid_language_detection - INFO - MMS-LID detected: Punjabi (pa) with confidence 1.000
+2026-01-07 13:08:27,536 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Punjabi', 'language_code': 'pa', 'confidence': 0.9995569586753845, 'detection_method': 'mms_lid_fallback', 'model_used': 'facebook/mms-lid-126', 'mms_lid_raw': 'pan', 'whisper_result': {'language': 'hi', 'confidence': 0.4029516875743866}}
+2026-01-07 13:08:27,536 - root - INFO - Language validation passed: Punjabi (pa)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-07 13:08:30,234 - root - INFO - Applying punctuation for Punjabi
+2026-01-07 13:11:15,060 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-07 13:11:15,601 - services.mms_lid_language_detection - INFO - Whisper detected hi with low confidence 0.363, using MMS-LID fallback
+2026-01-07 13:11:15,601 - services.mms_lid_language_detection - INFO - Using MMS-LID 126 model for language detection
+2026-01-07 13:11:15,952 - services.mms_lid_language_detection - INFO - MMS-LID detected: Punjabi (pa) with confidence 0.996
+2026-01-07 13:11:15,953 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Punjabi', 'language_code': 'pa', 'confidence': 0.9960749745368958, 'detection_method': 'mms_lid_fallback', 'model_used': 'facebook/mms-lid-126', 'mms_lid_raw': 'pan', 'whisper_result': {'language': 'hi', 'confidence': 0.36337482929229736}}
+2026-01-07 13:11:15,953 - root - INFO - Language validation passed: Punjabi (pa)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-07 13:11:17,175 - root - INFO - Applying punctuation for Punjabi
+2026-01-07 13:12:23,616 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-07 13:12:24,113 - services.mms_lid_language_detection - INFO - Whisper detected Hindi with high confidence 0.801
+2026-01-07 13:12:24,113 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Hindi', 'language_code': 'hi', 'confidence': 0.8005154728889465, 'detection_method': 'whisper', 'model_used': 'whisper-small'}
+2026-01-07 13:12:24,114 - root - INFO - Language validation passed: Hindi (hi)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-07 13:12:25,211 - root - INFO - Applying punctuation for Hindi
+2026-01-07 13:13:56,753 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-07 13:13:57,203 - services.mms_lid_language_detection - INFO - Whisper detected hi with low confidence 0.706, using MMS-LID fallback
+2026-01-07 13:13:57,203 - services.mms_lid_language_detection - INFO - Using MMS-LID 126 model for language detection
+2026-01-07 13:13:57,542 - services.mms_lid_language_detection - INFO - MMS-LID detected: Punjabi (pa) with confidence 0.999
+2026-01-07 13:13:57,542 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Punjabi', 'language_code': 'pa', 'confidence': 0.9989684820175171, 'detection_method': 'mms_lid_fallback', 'model_used': 'facebook/mms-lid-126', 'mms_lid_raw': 'pan', 'whisper_result': {'language': 'hi', 'confidence': 0.7056465744972229}}
+2026-01-07 13:13:57,542 - root - INFO - Language validation passed: Punjabi (pa)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-07 13:13:58,976 - root - INFO - Applying punctuation for Punjabi
+2026-01-07 13:18:23,244 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-07 13:18:23,690 - services.mms_lid_language_detection - INFO - Whisper detected Hindi with high confidence 0.873
+2026-01-07 13:18:23,690 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Hindi', 'language_code': 'hi', 'confidence': 0.8729521036148071, 'detection_method': 'whisper', 'model_used': 'whisper-small'}
+2026-01-07 13:18:23,692 - root - INFO - Language validation passed: Hindi (hi)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-07 13:19:04,057 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-07 13:19:04,480 - services.mms_lid_language_detection - INFO - Whisper detected hi with low confidence 0.463, using MMS-LID fallback
+2026-01-07 13:19:04,480 - services.mms_lid_language_detection - INFO - Using MMS-LID 126 model for language detection
+2026-01-07 13:19:04,827 - services.mms_lid_language_detection - INFO - MMS-LID detected: Punjabi (pa) with confidence 0.999
+2026-01-07 13:19:04,827 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Punjabi', 'language_code': 'pa', 'confidence': 0.9991040825843811, 'detection_method': 'mms_lid_fallback', 'model_used': 'facebook/mms-lid-126', 'mms_lid_raw': 'pan', 'whisper_result': {'language': 'hi', 'confidence': 0.4631092846393585}}
+2026-01-07 13:19:04,827 - root - INFO - Language validation passed: Punjabi (pa)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-07 13:19:06,674 - root - INFO - Applying punctuation for Punjabi
+2026-01-07 13:23:24,633 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-07 13:23:25,247 - services.mms_lid_language_detection - INFO - Whisper detected ur with low confidence 0.267, using MMS-LID fallback
+2026-01-07 13:23:25,248 - services.mms_lid_language_detection - INFO - Using MMS-LID 126 model for language detection
+2026-01-07 13:23:25,491 - services.mms_lid_language_detection - INFO - MMS-LID detected: Punjabi (pa) with confidence 0.935
+2026-01-07 13:23:25,492 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Punjabi', 'language_code': 'pa', 'confidence': 0.934790313243866, 'detection_method': 'mms_lid_fallback', 'model_used': 'facebook/mms-lid-126', 'mms_lid_raw': 'pan', 'whisper_result': {'language': 'ur', 'confidence': 0.26684659719467163}}
+2026-01-07 13:23:25,492 - root - INFO - Language validation passed: Punjabi (pa)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-07 13:23:52,296 - services.mms_lid_language_detection - INFO - Starting hybrid language detection for: uploads/audio.webm
+2026-01-07 13:23:52,682 - services.mms_lid_language_detection - INFO - Whisper detected pa with low confidence 0.738, using MMS-LID fallback
+2026-01-07 13:23:52,682 - services.mms_lid_language_detection - INFO - Using MMS-LID 126 model for language detection
+2026-01-07 13:23:52,974 - services.mms_lid_language_detection - INFO - MMS-LID detected: Punjabi (pa) with confidence 0.999
+2026-01-07 13:23:52,974 - root - INFO - MMS-LID language detection result: {'success': True, 'detected_language': 'Punjabi', 'language_code': 'pa', 'confidence': 0.9992105960845947, 'detection_method': 'mms_lid_fallback', 'model_used': 'facebook/mms-lid-126', 'mms_lid_raw': 'pan', 'whisper_result': {'language': 'pa', 'confidence': 0.7381044030189514}}
+2026-01-07 13:23:52,974 - root - INFO - Language validation passed: Punjabi (pa)
+/app/backend/services/transcription_service.py:135: UserWarning: PySoundFile failed. Trying audioread instead.
+  y, sr = librosa.load(audio_path, sr=16000, mono=True)
+/usr/local/lib/python3.10/site-packages/librosa/core/audio.py:184: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+2026-01-07 13:23:54,221 - root - INFO - Applying punctuation for Punjabi
