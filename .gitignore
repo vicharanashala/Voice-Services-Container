@@ -1,2 +1,2 @@
 .env
-logs/supervisor/
+logs/supervisor/*
