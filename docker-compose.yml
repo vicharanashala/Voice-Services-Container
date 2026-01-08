@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: kcc_voice_system
+    container_name: voice_system
     ports:
       - "5020:5020" # Backend API
     volumes:
