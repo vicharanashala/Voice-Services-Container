@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  voice_recommendation_system:
+  voice_system_service:
     build:
       context: .
       dockerfile: Dockerfile
